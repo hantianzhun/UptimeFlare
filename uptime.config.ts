@@ -70,9 +70,7 @@ const workerConfig = {
   // 删除邮件通知相关配置，暂时不需要通知
   notification: {},
 
-  // 状态变化和故障事件的回调
-  callbacks: {},
-  },
+  // 删除 callbacks 配置
 }
 
 // 导出配置
