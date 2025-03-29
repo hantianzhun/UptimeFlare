@@ -15,8 +15,8 @@ const pageConfig = {
 
 // workerConfig 配置：服务监控相关设置
 const workerConfig = {
-  // 最小数据保存时间为 3 分钟，避免频繁写入 KV 存储
-  kvWriteCooldownMinutes: 3,
+  // 最小数据保存时间为 5 分钟，避免频繁写入 KV 存储
+  kvWriteCooldownMinutes: 5,
 
   // 定义所有监控项
   monitors: [
