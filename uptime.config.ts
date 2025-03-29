@@ -4,9 +4,9 @@ const pageConfig = {
   title: "枕上诗书闲的状态页", 
   // 状态页头部的链接
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
+    { link: 'https://github.com/hantianzhun', label: 'GitHub' },
     { link: 'https://587459.xyz/home', label: 'Serverless 页面' },
+    { link: 'https://blog.587459.xyz', label: 'Blog' },
     { link: 'https://img.587459.xyz', label: '图床' },
     { link: 'https://flist.587459.xyz', label: '软件列表' },
     { link: 'https://git.587459.xyz', label: 'GitHub 加速' },
