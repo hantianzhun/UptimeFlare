@@ -71,16 +71,7 @@ const workerConfig = {
   notification: {},
 
   // 状态变化和故障事件的回调
-  callbacks: {
-    // 当服务状态变化时调用的回调
-    onStatusChange: async (env, monitor, isUp, timeIncidentStart, timeNow, reason) => {
-      // 你可以在这里处理状态变化逻辑
-    },
-    
-    // 当服务发生故障时，每分钟调用一次
-    onIncident: async (env, monitor, timeIncidentStart, timeNow, reason) => {
-      // 你可以在这里处理持续故障的逻辑
-    },
+  callbacks: {},
   },
 }
 
