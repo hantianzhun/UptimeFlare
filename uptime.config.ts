@@ -25,7 +25,7 @@ const workerConfig = {
       id: 'serverless_monitor',
       name: 'Serverless 页面',
       method: 'GET',
-      target: 'https://587459.xyz/home',
+      target: 'https://587459.xyz',
       expectedCodes: [200], // 期望的 HTTP 状态码
       timeout: 10000, // 超时 10 秒
     },
