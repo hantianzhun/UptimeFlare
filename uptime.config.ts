@@ -4,19 +4,20 @@ const pageConfig = {
   title: "枕上诗书闲的状态页", 
   // 状态页头部的链接
   links: [
-    { link: 'https://github.com/hantianzhun', label: 'GitHub' },
     { link: 'https://587459.xyz', label: 'Serverless 页面' },
     { link: 'https://blog.587459.xyz', label: 'Blog' },
     { link: 'https://img.587459.xyz', label: '图床' },
     { link: 'https://flist.587459.xyz', label: '软件列表' },
     { link: 'https://git.587459.xyz', label: 'GitHub 加速' },
+    { link: 'https://um1.hanli.dpdns.org', label: '音乐解锁(ord)' },
+    { link: 'https://um2.hanli.dpdns.org', label: '音乐解锁(new)' },
   ],
 }
 
 // workerConfig 配置：服务监控相关设置
 const workerConfig = {
-  // 最小数据保存时间为 5 分钟，避免频繁写入 KV 存储
-  kvWriteCooldownMinutes: 5,
+  // 最小数据保存时间为 10 分钟，避免频繁写入 KV 存储
+  kvWriteCooldownMinutes: 10,
 
   // 定义所有监控项
   monitors: [
@@ -62,6 +63,24 @@ const workerConfig = {
       name: 'GitHub 加速',
       method: 'GET',
       target: 'https://git.587459.xyz',
+      expectedCodes: [200],
+      timeout: 10000,
+    },
+    // 音乐解锁(ord)监控
+    {
+      id: 'um1_monitor',
+      name: '音乐解锁(ord)',
+      method: 'GET',
+      target: 'https://um1.hanli.dpdns.org',
+      expectedCodes: [200],
+      timeout: 10000,
+    },
+    // 音乐解锁(new)监控
+    {
+      id: 'um2_monitor',
+      name: '音乐解锁(new)',
+      method: 'GET',
+      target: 'https://um2.hanli.dpdns.org',
       expectedCodes: [200],
       timeout: 10000,
     },
