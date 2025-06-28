@@ -7,7 +7,6 @@ const pageConfig = {
     { link: 'https://587459.xyz', label: 'Serverless 页面' },
     { link: 'https://blog.587459.xyz', label: 'Blog' },
     { link: 'https://img.587459.xyz', label: '图床' },
-    { link: 'https://flist.587459.xyz', label: '软件列表' },
     { link: 'https://git.587459.xyz', label: 'GitHub 加速' },
     { link: 'https://um1.hanli.dpdns.org', label: '音乐解锁(ord)' },
     { link: 'https://um2.hanli.dpdns.org', label: '音乐解锁(new)' },
@@ -45,15 +44,6 @@ const workerConfig = {
       name: '图床',
       method: 'GET',
       target: 'https://img.587459.xyz',
-      expectedCodes: [200],
-      timeout: 10000,
-    },
-    // 软件列表监控
-    {
-      id: 'flist_monitor',
-      name: '软件列表',
-      method: 'GET',
-      target: 'https://flist.587459.xyz',
       expectedCodes: [200],
       timeout: 10000,
     },
