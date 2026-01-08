@@ -38,7 +38,7 @@ const workerConfig: WorkerConfig = {
     id: 'blog_overseas',
     name: '枕上诗书闲的博客 (国外)',
     method: 'GET',
-    target: 'http://hanli.kesug.com/',
+    target: 'https://hanli.kesug.com/',
     statusPageLink: 'http://hanli.kesug.com/',
   },
   {
